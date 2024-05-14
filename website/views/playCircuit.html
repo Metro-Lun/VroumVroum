@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jeu - VroumVroum</title>
+
+        <link rel="icon" href="../../assets/logo.png">
+        <link rel="stylesheet" href="styles/generalStyle.css">
+        <link rel="stylesheet" href="styles/canvasStyle.css">
+        <link rel="stylesheet" href="styles/circuitStyle.css">
+        <link rel="stylesheet" href="styles/alertStyle.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+
+    <body id="playBody">
+        <main id="playMain">
+            <canvas id="canvas">Votre navigateur ne supporte pas HTML5, veuillez le mettre à jour pour jouer.</canvas>
+            <div>
+                <aside id="timeInfos">
+                    <div class="chronometerLeaderboardTitle">Time</div>
+                    <div class="checkpointCountLeaderboardTitle">Checkpoint</div>
+                    <div class="lapsCountLeaderboardTitle">Tour</div>
+                </aside>
+
+                <aside id='asideInfos'>
+                    <h1 id="circuitName">Nom de la carte</h1>
+            
+                    <p id="score">Score : Score</p>
+                    <p id="creatorName">Créateur : CreateurUsername</p>
+                    <p id="creatorScore">Médaille auteur : createurScore</p>
+            
+                    <div id="leaderboard">
+                        <h2>Leaderboard</h2>
+                        <div id="leaderboardPlayers">stuff is supposed to go here</div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <script type="module" src="../controllers/redirection/controllerHeader.js"></script>
+        <script type="module" src="../models/gameplay/gameplay.js"></script>
+        <script type="module" src="../models/entities/Alert.js"></script>
+    </body>
+</html>

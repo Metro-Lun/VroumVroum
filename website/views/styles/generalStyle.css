@@ -1,0 +1,129 @@
+/* for specific font-styles */
+@font-face {
+    font-family: 'PlayPretend';
+    src: url('fonts/PlayPretend.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'OctoSquares';
+    src: url('fonts/OctoSquares.ttf');
+}
+
+/* the main body sticks to the window's frame */
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(71, 223, 215);
+    background: url("../../../assets/circuitFond2.jpg") no-repeat fixed top left;
+    background-position: center bottom;
+    background-size: cover;
+    font-family: 'OctoSquares', Arial, Helvetica, sans-serif;
+}
+
+/* MAIN PAGE */
+
+main {
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'PlayPretend', Arial, Helvetica, sans-serif, serif;
+    font-size: 70px;
+}
+
+/* BUTTONS */
+
+button {
+    font-family: 'OctoSquares', Arial, Helvetica, sans-serif, serif;
+
+    margin: 10px;
+    padding: 20px 45px;
+
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    color: black;
+    background-color: #fff;
+
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:not(#choosers button):hover {
+    background-color: black;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+/* LINKS */
+
+a, a:visited {
+    text-decoration: none;
+    color: blue;
+    transition: color 0.2s ease 0s;
+}
+
+a:hover {
+    color: rgb(213, 59, 233);
+}
+
+/* OTHER */
+
+.invisible, #filter.invisible, #personalPage.invisible {
+    display: none;
+}
+
+.tileSelector,
+aside,
+#choosers button,
+h1#choiceTitle,
+#filter,
+#pageSelector,
+#personalPage,
+#circuitInfos,
+#divCanvas,
+h1#formTitle,
+form {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    border: 1px solid black;
+}
+
+input {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    height: 35px;
+    border-radius: 40px;
+    padding: 20px;
+    outline: none;
+    transition: all 0.3s;
+    box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.2);
+    border: gray solid 1px;
+}
+
+

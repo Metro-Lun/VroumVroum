@@ -1,0 +1,128 @@
+header {
+    display: grid;
+    grid-template: auto / 1fr 3fr;
+    text-align: center;
+    background: linear-gradient(90deg, #8b53fb, #00BF63);
+    align-items: center;
+    z-index: 1000;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    text-align: left;
+    width: 50%;
+    transition: scale 0.2s ease 0s;
+}
+
+header div {
+    margin-right: 1rem;
+    text-align: right;
+}
+
+header button {
+    margin: 0.5em 1em;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+#headerButtons {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+/* img transition on hover */
+header img:hover {
+    scale: 0.9;
+}
+
+header a:not(#burger a) {
+    display: flex;
+    text-align: left;
+    margin-left: 1em;
+}
+
+#headerButtons a {
+    margin: auto 5px;
+}
+
+#profileImg {
+    margin: 3.5px 0px 0px 0px;
+    text-align: right;
+    transition: scale 0.2s ease 0s;
+}
+
+/* DROPDOWN MENU */
+
+#burgerWrapper {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+#burger {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#burger a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#burger a:hover {
+    background: #4183cc;
+}
+
+#burger.visible {
+    display: block;
+}
+
+#a-circ, #a-acc{
+    border-radius: 10px;
+}
+
+#burger{
+    border-radius: 10px;
+    background: #5DE0E6;
+}
+
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-template: auto / 1fr 8fr 1fr;
+    background: linear-gradient(90deg, #8b53fb, #00BF63);
+    text-align: center;
+    align-items: center;
+    padding: 0.4em;
+    margin-top: 2em;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+footer img {
+    width: 50%;
+}
+
+footer a {
+    display: flex;
+    margin: 0px auto;
+    text-align: start;
+}

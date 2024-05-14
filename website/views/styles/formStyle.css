@@ -1,0 +1,102 @@
+#mainForm {
+    display: grid;
+    grid-template: auto / 1fr 4fr 1fr;
+}
+
+#allForm {
+    grid-area: 2/3/1/2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 45px;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 50em;
+    text-align: left;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    position: relative;
+}
+
+label {
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+}
+
+input {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    height: 35px;
+    border-radius: 40px;
+    padding: 20px;
+    outline: none;
+    transition: all 0.3s;
+    box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.2);
+    border: gray solid 1px;
+}
+
+#filter input {
+    padding: 5px;
+    margin: auto 0px auto 10px;
+}
+
+#personalPage button {
+    padding: 10px;
+    margin-left: auto;
+}
+
+input:focus {
+    background-color: rgb(221, 221, 221);
+    box-shadow: inset 0 18px 10px rgba(0, 0, 0, 0.2);
+}
+
+form button {
+    display: flex;
+    margin: 40px auto auto auto;
+    justify-content: center;
+    width: 12em;
+    text-align: center;
+}
+
+select {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    height: 45px;
+    border-radius: 40px;
+    padding: 0px 12px;
+    margin: auto 0px auto 10px;
+}
+
+
+/* --- ICON --- */
+
+.field .passwordIcon{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 72%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 30px;
+    color: #000000;
+    transition: all 0.2s;
+}
+
+.field .passwordIcon:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.field .passwordIcon .feather-eye-off{
+    display: none;
+}

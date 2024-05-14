@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Choix du circuit - VroumVroum</title>
+
+        <link rel="icon" href="../../assets/logo.png">
+        <link rel="stylesheet" href="styles/generalStyle.css">
+        <link rel="stylesheet" href="styles/canvasStyle.css">
+        <link rel="stylesheet" href="styles/circuitStyle.css">
+        <link rel="stylesheet" href="styles/formStyle.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+
+    <body>
+        <main class="circuitMain">
+
+            <section id="choiceSection">
+                <h1 id="choiceTitle">Choix du circuit</h1>
+
+                <section>
+                    <div id="createNewCircuit" class="personalPage">
+                        <h2>Mes circuits</h2>
+                        <button id="createNewCircuitButton">CREER UN NOUVEAU CIRCUIT</button>
+                    </div>
+                    <div id="filter" class="universalPage">
+                        <h2>Filtrer par nom : </h2>
+                        <input type="text" id="nameFilter">
+                        <h2 id="creatorTitle">Filtrer par créateur : </h2>
+                        <input type="text" id="creatorFilter">
+                    </div>
+                    <div id="circuits"></div>
+                </section>
+
+                <div id="pageSelector">
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-backward"></i>
+                    <p>numéro de page</p>
+                    <i class="fa-solid fa-forward"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+            </section>
+
+            <aside class="universalPage">
+                <div id="empty">
+                    <p>Cliquez sur un circuit pour afficher ses informations !</p>
+                </div>
+                <section id="full" class="invisible">
+                    <h1 id="circuitName">Nom de la carte</h1>
+
+                    <p id="score">Score : Score</p>
+                    <p id="creatorName">Créateur : CreateurUsername</p>
+                    <p id="creatorScore">Médaille auteur : createurScore</p>
+
+                    <div id="leaderboard">
+                        <h2 id="leaderboardTitle">Leaderboard</h2>
+                        <div id="leaderboardPlayers">stuff is supposed to go there</div>
+                    </div>
+
+                    <div>
+                        <button id="playButton">JOUER</button>
+                    </div>
+                </section>
+            </aside>
+
+            <aside class="personalPage">
+                <div id="emptyPersonal">
+                    <p>Cliquez sur un circuit pour afficher ses informations !</p>
+                </div>
+                <section id="fullPersonal" class="invisible">
+                    <h1 id="circuitNamePersonal">Nom de la carte</h1>
+
+                    <p id="scorePersonal">Score : Score</p>
+                    <p id="creatorScorePersonal">Médaille auteur : createurScore</p>
+
+                    <div id="leaderboardPersonal">
+                        <h2 id="leaderboardTitlePersonal">Leaderboard</h2>
+                        <div id="leaderboardPlayersPersonal">stuff is supposed to go there</div>
+                    </div>
+
+                    <div>
+                        <button id="playButtonPersonal"  >JOUER</button>
+                        <button id="modifyButtonPersonal">MODIFIER</button>
+                        <button id="deleteButtonPersonal">SUPPRIMER</button>
+                    </div>
+                </section>
+            </aside>
+                
+        </main>
+
+        <script type="module" src="../controllers/redirection/controllerHeader.js"></script>
+        <script type="module" src="../controllers/choice/controllerChoice.js"></script>
+    </body>
+</html>

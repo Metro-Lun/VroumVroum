@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Création de circuit - VroumVroum</title>
+
+        <link rel="icon" href="../../assets/logo.png">
+        <link rel="stylesheet" href="styles/generalStyle.css">
+        <link rel="stylesheet" href="styles/canvasStyle.css">
+        <link rel="stylesheet" href="styles/circuitStyle.css">
+        <link rel="stylesheet" href="styles/formStyle.css">
+        <link rel="stylesheet" href="styles/alertStyle.css">
+    </head>
+
+    <body>
+        <main class="circuitMain">
+            <div>
+                <div id="circuit"></div>
+                <div id="items">
+                    <div id="choosers">
+                        <div id="buttonsInfo">
+                            <button id="b1" class="chooser selected">Tuiles</button>
+                            <button id="b2" class="chooser">Départs / Arrivées</button>
+                            <button id="b3" class="chooser">Checkpoints</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside>
+                <section>
+                    <h2>Bienvenue dans le créateur de circuits !</h2>
+                    <p>Pour poser des tuiles, sélectionnez-en une dans le menu du bas, et cliquez sur les cases de la grille pour les placer.</p>
+                    <p id="attention">Vous pouvez faire <strong>clic droit</strong> sur une tuile pour la pivoter.</p>
+                    <p>Une fois votre circuit terminé, vous pouvez le sauvegarder.</p>
+                </section>
+
+                <div>
+                    <div>
+                        <label for="savebutton">Sauvegarder le circuit ?</label>
+                        <button id="savebutton">SAUVEGARDER</button>
+                    </div>
+
+                    <div>
+                        <label>Effacer le circuit ?</label>
+                        <button id="reinitbutton">EFFACER</button>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        
+        <script type="module" src="../controllers/redirection/controllerHeader.js"></script>
+        <script type="module" src="../controllers/creation/controllerCreation.js"></script>
+    </body>
+</html>

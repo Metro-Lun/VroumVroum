@@ -1,0 +1,114 @@
+#canvas {
+    border: 1px solid black;
+    width: 100%;
+    overflow-x: scroll;
+    max-width: 90%;
+    border-radius: 10px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: url("../../../assets/circuitFond1.jpg") no-repeat fixed top left;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+#vroumCoinContainer, #pCoin{
+    margin: 2%;
+    display: flex;
+    align-items: center;
+}
+
+#divCanvas{
+    display: flex;
+    overflow-x: scroll;
+    max-width: 80%;
+    border-radius: 10px;
+
+    padding-top : 5%;
+    margin: 5% auto 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: #8f9ea0;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border: solid 0 transparent;
+    background-color: #54585b;
+    border-radius: 10px;
+}
+
+#buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#buttonsContainer button {
+    display: none;
+    padding : 14px;
+}
+
+#buttonCarChosen{
+    background:linear-gradient(145deg, #FFDE59, #FF914D);
+    font-size: 15px;
+    border: none;
+    margin: 20px 37px;
+}
+
+#buttonCar{
+    background:linear-gradient(145deg, #5de0e6, #004aad);
+    font-size: 15px;
+    border: none;
+    margin: 20px 35px;
+}
+
+#buttonCarBuy{
+    background:linear-gradient(145deg, #FF3131, #FF914D);
+    font-size: 15px;
+    border: none;
+    margin: 20px 29px;
+}
+
+
+#divChoiceCar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 10px;
+
+    max-width: 160px;
+}
+
+#canvasPiece{
+    width: 50px;
+    height: auto;
+    margin-left: 5px;
+}
+
+#canvasStack{
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+}
+
+#vroumCoinDiv{
+    padding: 2px;
+    border: solid 2px black;
+    background-color: #A8D132;
+}
+
+#pCoin{
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#canvasKart{
+    margin: 0;
+}

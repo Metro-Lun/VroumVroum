@@ -1,0 +1,76 @@
+#mainInfo {
+    display: inline;
+}
+
+#mainInfo p {
+    display: inline;
+}
+
+#Form{
+    margin: 20px;
+}
+
+body{
+    background: url("../../../assets/circuitFond2.jpg") no-repeat fixed top left;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+label, .pAccount{
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 50em;
+    text-align: left;
+    align-items: center;
+}
+
+/* PROFILE IMAGE DISPLAY */
+
+#labelFile{
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #000000;
+    font-weight: bold;
+}
+
+#labelFile:hover{
+    color: #ff0000;
+    font-size: 25px;
+}
+
+#previewContainer{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#previewImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#saveButton{
+    display: none;
+}
+
+input{
+    color: grey;
+    margin-bottom: 30px;
+}
+
+#vroumCoinDiv, #name {
+    display: flex;
+    align-items: center;
+}
